@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:DrinkChoice"
         mc:Ignorable="d"
         Title="Drink Choice" Height="400" Width="400">
-    <Grid>
+    
+    <DockPanel x:Name="restDoc" Margin="30">
+        <TextBlock DockPanel.Dock="Top" Margin="20" Text="{Binding}"/>
+
+        <TextBlock DockPanel.Dock="Bottom" Margin="20" Text="{Binding}"/>
         <local:RestaurantControl x:Name="restCtrl"/>
-    </Grid>
+    </DockPanel>
 </Window>
