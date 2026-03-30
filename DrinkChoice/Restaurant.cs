@@ -22,8 +22,7 @@ namespace DrinkChoice
             foreach (SodaType soda in Enum.GetValues(typeof(SodaType)))
             {
                 SodaChoice choice = new SodaChoice(soda);
-                PossibleSodas.Add(new SodaChoice(soda));
-               
+                PossibleSodas.Add(choice);
             }
             foreach (SodaChoice choice in PossibleSodas)
             {
